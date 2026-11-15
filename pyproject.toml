@@ -1,0 +1,9 @@
+[project]
+name = "talentiq"
+version = "1.0.0"
+description = "Employee attrition prediction and workforce intelligence demo"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
