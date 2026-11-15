@@ -77,4 +77,8 @@ TalentIQ/
 - Any real-world deployment would require legal, privacy, security, fairness, and organizational review.
 
 ## Author
-Mohamed Riyaz S.
+
+**Mohamed Riyaz S.**  
+Integrated M.Tech, Computer Science and Engineering (Business Analytics)  
+VIT Chennai
+
