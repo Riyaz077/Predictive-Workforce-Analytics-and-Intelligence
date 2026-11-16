@@ -17,36 +17,31 @@ TalentIQ is an educational HR analytics prototype that uses machine learning to 
 - FastAPI scoring endpoints
 - Unit tests and methodology documentation
 
-## Quick start
+## Quick Start
 
-Python 3.10+ recommended.
+- Ensure Python 3.10 or later is installed.
+- Create and activate a Python virtual environment.
+- Install project dependencies using `requirements.txt`.
+- Generate the synthetic employee dataset.
+- Train the employee attrition prediction model.
+- Launch the interactive Streamlit dashboard.
+- Explore employee analytics, attrition patterns, and predictive insights.
 
-```bash
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# macOS/Linux
-source .venv/bin/activate
+## API Usage
 
-pip install -r requirements.txt
-python scripts/generate_data.py
-python scripts/train_model.py
-streamlit run app/streamlit_app.py
-```
+- Start the FastAPI backend in a separate terminal.
+- Access interactive API documentation at `http://127.0.0.1:8000/docs`.
+- Submit employee details to the `/predict-attrition` POST endpoint.
+- Analyze workforce attributes, job satisfaction, compensation, and employment history.
+- Receive predicted employee attrition risk and model-generated insights in JSON format.
 
-## Run API
-In another terminal:
-```bash
-uvicorn api.main:app --reload
-```
-Open `http://127.0.0.1:8000/docs`.
+**Example input parameters:**
 
-Example request:
-```bash
-curl -X POST "http://127.0.0.1:8000/predict-attrition" \
-  -H "Content-Type: application/json" \
-  -d '{"age":32,"monthly_income":6500,"years_at_company":3,"years_in_current_role":2,"years_since_promotion":2,"job_satisfaction":2,"work_life_balance":2,"overtime":1,"distance_from_home":12,"training_times_last_year":2,"department":"Research & Development","job_role":"Research Scientist","business_travel":"Travel_Rarely"}'
-```
+- Employee demographics and monthly income.
+- Years at company and current role.
+- Job satisfaction and work-life balance.
+- Overtime, travel frequency, and distance from home.
+- Department, job role, and training history.
 
 ## Project structure
 ```text
